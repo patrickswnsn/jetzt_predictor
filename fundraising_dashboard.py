@@ -128,7 +128,14 @@ fig.update_layout(
     xaxis_title="Date",
     yaxis_title="Supporters",
     height=500,
-    showlegend=True
+    showlegend=True,
+    legend=dict(
+        orientation="h",
+        yanchor="top",
+        y=-0.1,
+        xanchor="center",
+        x=0.5
+    )
 )
 
 st.plotly_chart(fig, use_container_width=True)
