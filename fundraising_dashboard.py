@@ -124,7 +124,7 @@ fig.add_shape(
 )
 
 fig.update_layout(
-    title="Will You Reach Your Goal?",
+    title="Will They Reach Their Goal?",
     xaxis_title="",
     yaxis_title="Supporters",
     height=500,
