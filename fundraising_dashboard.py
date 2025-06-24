@@ -43,10 +43,8 @@ y_recent = recent_df['supporters'].values
 recent_model = LinearRegression()
 recent_model.fit(X_recent, y_recent)
 
-# Calculate final predictions
+# Calculate end day once
 end_day = (END_DATE - df['date'].iloc[0]).days
-overall_final = overall_model.predict([[end_day]])[0]
-recent_final = recent_model.predict([[end_day]])[0]
 
 # Header
 st.title("🎯 JETZT Fundraising Dashboard")
