@@ -58,8 +58,10 @@ with col2:
 with col3:
     st.metric("Days Left", DAYS_REMAINING, f"Need {needed_daily:.0f}/day")
 with col4:
+    overall_final = overall_model.predict([[end_day]])[0]
     st.metric("Overall Trend Prediction", f"{overall_final:,.0f}", f"{overall_final - GOAL:+,.0f} vs goal")
 with col5:
+    recent_final = recent_model.predict([[end_day]])[0]
     st.metric("Recent Trend Prediction", f"{recent_final:,.0f}", f"{recent_final - GOAL:+,.0f} vs goal")
 
 # Generate future predictions for chart
