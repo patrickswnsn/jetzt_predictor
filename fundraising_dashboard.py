@@ -22,7 +22,7 @@ df['days_since_start'] = (df['date'] - df['date'].iloc[0]).dt.days
 # Campaign parameters
 GOAL = 5000
 END_DATE = datetime(2025, 7, 6)
-TODAY = datetime(2025, 6, 24)
+TODAY = datetime(2025, 6, 29)
 DAYS_REMAINING = (END_DATE - TODAY).days
 
 # Current stats
